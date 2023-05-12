@@ -4,6 +4,7 @@
     <!-- Stylesheet Linked here -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,61 +14,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- liked favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
     <title>A.M Project Management LLC – https://ampm-llc.com/</title>
   </head>
   <body>
     <div class="container">
+      <!-- This code represents the top navigation bar component and the slideshow section, which contains multiple images that will be displayed in a loop. -->
       <div class="top-nav-bar">
-        <!-- appended code from the navbar component -->
+        <!-- Appended code from the navbar component will go here -->
       </div>
 
-      <!-- slider img part -->
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img
-            src="https://ampm-llc.com/wp-content/uploads/2022/11/4-1.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
+      <div class="img-slider-container">
+        <div class="slideshow-container">
+          <!-- Each div with class 'mySlides' represents a slide -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/4-1.jpg"
+              style="width: 100%"
+            />
+          </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img
-            src="https://ampm-llc.com/wp-content/uploads/2022/11/1-1.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Two</div>
-        </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/1-1.jpg"
+              style="width: 100%"
+            />
+          </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img
-            src="https://ampm-llc.com/wp-content/uploads/2022/11/2-1.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img
-            src="https://ampm-llc.com/wp-content/uploads/2022/11/3-1.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Three</div>
-        </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/2-1.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/3-1.jpg"
+              style="width: 100%"
+            />
+          </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </div>
-      <br />
 
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="section-des-container">
+        <div class="section-heading-logo">
+          <div class="section-des-heading">
+            <h2>Welcome to A.M Project Management</h2>
+            <h3>LLC</h3>
+          </div>
+          <div class="section-des-logo">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/Thank-you-for-comingvvv.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <p class="section-description">
+          with over 35 years of experience in the international trade market,
+          our team of experts recognizes the importance of sincere and reliable
+          service to our clientele, this is the topmost priority for us.
+          Furthermore, during our comprehensive time in this market, we have
+          developed an extensive procurement network & partnerships with various
+          prestigious companies in many regions. Our logistics team administers
+          a well-regulated shipment procedure to ensure timely delivery of any &
+          all consignments. With a demonstrated history of achievement, our team
+          of professionals continue to strive for excellence and to provide only
+          the highest standard of service to our clientele.
+        </p>
+      </div>
+
+      <div class="products-container">
+        <div class="products-heading">
+          <h2>Products</h2>
+          <h3>AM Project Management LLC</h3>
+        </div>
+        <div class="products-card">
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/SULPHUR-GRANULES-200x200.jpg"
+              alt="SULPHUR GRANULES"
+            />
+            <h3 class="prod-title">SULPHUR GRANULES</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/SULPHUR-LUMPS-200x200.jpg"
+              alt="SULPHUR LUMPS"
+            />
+            <h3 class="prod-title">SULPHUR LUMPS</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/SULPHUR-FLAKES-200x200.jpg"
+              alt="SULPHUR FLAKES"
+            />
+            <h3 class="prod-title">SULPHUR FLAKES</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/SULPHUR-BENTONITE-200x200.jpg"
+              alt="SULPHUR BENTONITE"
+            />
+            <h3 class="prod-title">SULPHUR BENTONITE</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/SULPHUR-WDG-80-200x200.jpg"
+              alt="SULPHUR WDG 80%"
+            />
+            <h3 class="prod-title">SULPHUR WDG 80%</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/Limestone-200x200.jpg"
+              alt="LIMESTONE"
+            />
+            <h3 class="prod-title">LIMESTONE</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/KCL-potash-200x200.jpg"
+              alt="KCL POTASH"
+            />
+            <h3 class="prod-title">KCL POTASH</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/UREA-granules-200x200.jpg"
+              alt="UREA GRANULES"
+            />
+            <h3 class="prod-title">UREA GRANULES</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/Urea-prills-200x200.jpg"
+              alt="UREA PRILLS"
+            />
+            <h3 class="prod-title">UREA PRILLS</h3>
+          </div>
+          <div class="prod-card-div">
+            <img
+              src="https://ampm-llc.com/wp-content/uploads/2022/11/gypsum-200x200.jpg"
+              alt="GYPSUM"
+            />
+            <h3 class="prod-title">GYPSUM</h3>
+          </div>
+        </div>
+        <div>
+          <a href="" class="products-view-all">view all products</a>
+        </div>
+      </div>
+
+      <!-- Footer started here -->
+      <div class="footer-container">
+        <p>
+          Powered by DK Systems | © 2022 A.M Project Management LLC, All rights
+          reserved
+        </p>
       </div>
     </div>
   </body>

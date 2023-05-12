@@ -1,0 +1,12 @@
+.footer-container {
+  background-color: #0f0f0f;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 14px;
+}
+.footer-container > p {
+  line-height: 1.7em;
+  color: #d9d9d9;
+  padding: 0px 5%;
+}
