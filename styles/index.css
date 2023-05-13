@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* started Img slider  */
 .mySlides {
   display: none;
@@ -275,6 +286,17 @@ img {
   gap: 50px;
   align-items: center;
   margin: auto;
+}
+
+.partners-associates-view-all {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+.partners-associates-view-all:hover {
+  color: #016be1;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
