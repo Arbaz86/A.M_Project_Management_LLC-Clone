@@ -125,6 +125,10 @@
   color: #016be1;
 }
 
+.small-screen-navbar {
+  display: none;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .navbar-sticky {
     font-size: 13px;
@@ -144,7 +148,47 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .top-nav-bar {
+  .large-screen-navbar {
     display: none;
+  }
+  .slideshow-container {
+    margin: 0;
+  }
+
+  /* small screen navbar */
+
+  .small-screen-navbar {
+    display: block;
+  }
+
+  .small-navbar-div {
+    background-color: white;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-items: center;
+    position: relative;
+  }
+
+  .small-navbar-logo > img {
+    height: 50px;
+    width: 241px;
+    position: absolute;
+    top: 10%;
+  }
+  .small-navbar-icons > button {
+    background-color: #292929;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .small-navbar-icons > button:hover {
+    background-color: #016be1;
   }
 }

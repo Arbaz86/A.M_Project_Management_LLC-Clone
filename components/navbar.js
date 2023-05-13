@@ -1,4 +1,4 @@
-const topNavbar = `
+const largeScreenNavbar = `
 <!-- This code represents the top section of a website -->
 <div class="site-wrap">
   <!-- This div contains the top bar with social media links and opening hours -->
@@ -63,15 +63,35 @@ const topNavbar = `
 <!-- Navigation menu -->
 <nav class="navbar-sticky">
   <div class="nav-links">
-    <a href="/index.html">HOME</a>
+    <a href="/">HOME</a>
     <a href="/">ABOUT US </a>
-    <a href="/">PRODUCTS</a>
+    <a href="./products.html">PRODUCTS</a>
     <a href="/">WHY US</a>
     <a href="/">PARTNERS & ASSOCIATES</a>
-    <a href="/">CONTACT US</a>
+    <a href="./contact.html">CONTACT US</a>
     <button class="nav-download-btn">DOWNLOAD COMPANY PROFILE</button>
   </div>
 </nav>
 `;
 
-document.querySelector(".top-nav-bar").innerHTML = topNavbar;
+const smallScreenNavbar = `
+  <div class="small-navbar-div">
+    <div class="small-navbar-logo">
+      <img
+        src="https://ampm-llc.com/wp-content/uploads/2022/11/Thank-you-for-comingvvv.png"
+        alt="logo"
+      />
+    </div>
+    <div class="small-navbar-icons">
+      <button class="navbar-search-icons">
+        <i class="fa fa-search"></i>
+      </button>
+      <button class="navbar-hamburger-icons">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </div>
+`;
+
+document.querySelector(".large-screen-navbar").innerHTML = largeScreenNavbar;
+document.querySelector(".small-screen-navbar").innerHTML = smallScreenNavbar;
