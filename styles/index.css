@@ -132,12 +132,8 @@ img {
 }
 .section-des-heading,
 .section-des-logo {
-  padding: 15px;
+  padding: 15px 0px;
   width: 50%;
-}
-
-.section-des-heading {
-  border-bottom: 1px solid #d6d6d68e;
 }
 
 .section-des-heading > h2 {
@@ -149,6 +145,13 @@ img {
   font-weight: 400;
   font-size: 14px;
   margin-top: 10px;
+}
+.section-des-heading > h3::after {
+  content: "";
+  border-bottom: 1px solid #016be1;
+  width: 70px;
+  padding-top: 20px;
+  display: block;
 }
 
 .section-description {
@@ -175,6 +178,15 @@ img {
   font-weight: 400;
   font-size: 14px;
   margin-top: 10px;
+  display: inline-block;
+}
+.products-heading > h3::after {
+  content: "";
+  border-bottom: 1px solid #016be1;
+  width: 60px;
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .products-card {
@@ -209,6 +221,81 @@ img {
   color: #016be1;
 }
 
+/* why us section css start */
+
+.why-us-section-container {
+  /* The image used */
+  background-image: url("https://ampm-llc.com/wp-content/uploads/2022/11/AM-PM-Main-Banner.jpg?id=1017");
+
+  /* Set a specific height */
+  height: 320px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative;
+}
+
+.why-us-section-details {
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.why-us-heading > h2 {
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.why-us-heading > h2::after {
+  content: "";
+  border-bottom: 2px solid #016be1;
+  width: 80px;
+  padding-top: 20px;
+  display: block;
+}
+
+.why-us-list {
+  margin-top: 20px;
+}
+
+.why-us-list > li {
+  margin: 12px;
+}
+
+/* Partners & Associates section css starts */
+
+.partners-Associates-section-container {
+  text-align: center;
+  margin: 30px;
+}
+
+.partners-Associates-section-heading > h2 {
+  font-weight: 500;
+  margin-left: 50px;
+}
+.partners-Associates-section-heading > h2::after {
+  content: "";
+  border-bottom: 2px solid #016be1;
+  width: 80px;
+  padding-top: 20px;
+  margin: 0px auto;
+  display: block;
+}
+
+.partners-Associates-section-brand-logo {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin: auto;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .section-des-container {
     width: 90%;
@@ -235,6 +322,13 @@ img {
   .products-card {
     grid-template-columns: repeat(3, 200px);
   }
+  .why-us-section-container {
+    background-size: cover;
+  }
+  .partners-Associates-section-brand-logo {
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -259,10 +353,24 @@ img {
   .products-card {
     grid-template-columns: repeat(2, 200px);
   }
+  .why-us-section-container {
+    background-size: cover;
+  }
+  .partners-Associates-section-brand-logo {
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .products-card {
     grid-template-columns: repeat(1, 200px);
+  }
+  .why-us-section-container {
+    background-size: cover;
+  }
+  .why-us-section-details {
+    color: white;
+    position: absolute;
+    left: 5%;
   }
 }
