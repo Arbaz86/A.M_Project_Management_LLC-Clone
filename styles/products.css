@@ -8,3 +8,153 @@ body {
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.contact-banner {
+  margin-top: -20px;
+}
+
+.contact-banner > img {
+  width: 100%;
+  height: 250px;
+}
+
+.products-page-container {
+  margin: 30px 0;
+}
+.product-des-heading {
+  text-align: center;
+}
+
+.prod-heading > h2,
+.rice-variety-headings > h2 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.prod-heading > h2::after,
+.rice-variety-headings > h2::after {
+  content: "";
+  border-bottom: 2px solid #016be1;
+  width: 80px;
+  padding-top: 20px;
+  margin: 0px auto;
+  display: block;
+}
+
+.product-des-heading > p {
+  width: 60%;
+  margin: 10px auto 50px;
+  font-size: 20px;
+}
+
+.products-cards-div {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.card-img-title {
+  height: 280px;
+  width: 220px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.prod-title > h3 {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.prod-title > h3::after {
+  content: "";
+  border-bottom: 2px solid #016be1;
+  width: 80px;
+  padding-top: 20px;
+  margin: 0px auto;
+  display: block;
+}
+
+.rice-variety-div {
+  background-color: #d3d3d3;
+  margin: 30px 0;
+  padding: 30px 5%;
+}
+
+.rice-cont-details {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.rice-variety-headings > h2 {
+  text-align: center;
+}
+
+.variety-lists-div > h4 {
+  margin: 15px;
+  margin-left: -20px;
+}
+.variety-lists-div > ul {
+  color: #727272;
+}
+
+.rice-prod-title > h3 {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.rice-prod-title > h3::after {
+  content: "";
+  border-bottom: 2px solid #016be1;
+  width: 80px;
+  padding-top: 20px;
+  margin: 0px auto;
+  display: block;
+}
+
+.rice-types-img-title {
+  justify-content: center;
+}
+.rice-types-img-title {
+  display: grid;
+  width: 80%;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 10px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .rice-types-img-title {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .products-cards-div,
+  .rice-types-img-title {
+    grid-template-columns: repeat(1, 200px);
+    justify-content: center;
+    align-items: center;
+  }
+  .product-des-heading > p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  .rice-cont-details {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+}

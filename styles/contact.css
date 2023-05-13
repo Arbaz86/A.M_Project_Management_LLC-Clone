@@ -49,7 +49,6 @@ body {
 .send-us-message-heading > h2,
 .department-heading > h2 {
   font-weight: 400;
-  margin-left: 50px;
 }
 
 .contact-address-no-heading > h2::after,
@@ -133,5 +132,8 @@ body {
   }
   .form-textarea-btn > button {
     width: 90%;
+  }
+  .contact-banner {
+    margin-top: 0;
   }
 }
