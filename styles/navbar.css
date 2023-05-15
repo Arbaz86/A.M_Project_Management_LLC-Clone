@@ -172,7 +172,7 @@
     position: relative;
   }
 
-  .small-navbar-logo > img {
+  .small-navbar-logo > a > img {
     height: 50px;
     width: 241px;
     position: absolute;

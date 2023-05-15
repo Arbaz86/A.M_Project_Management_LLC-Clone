@@ -147,6 +147,10 @@ function appendProduct(data) {
   data.forEach((el) => {
     let cardDiv = document.createElement("div");
     cardDiv.className = "card-img-title";
+    cardDiv.addEventListener("click", () => {
+      localStorage.setItem("product-item", JSON.stringify(el));
+      window.location.href = "./productDetails.html";
+    });
 
     // Create an image element and set its source and alt attributes
     let img = document.createElement("img");

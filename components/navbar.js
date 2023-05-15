@@ -27,10 +27,12 @@ const largeScreenNavbar = `
 <div class="site-header">
   <!-- Logo -->
   <div class="header-logo">
-    <img
-      src="https://ampm-llc.com/wp-content/uploads/2022/11/Thank-you-for-comingvvv.png"
-      alt="logo"
-    />
+    <a href="/">
+      <img
+        src="https://ampm-llc.com/wp-content/uploads/2022/11/Thank-you-for-comingvvv.png"
+        alt="logo"
+      />
+    </a>
   </div>
   <div class="header-contact-em-ph">
     <!-- Contact details -->
@@ -77,10 +79,12 @@ const largeScreenNavbar = `
 const smallScreenNavbar = `
   <div class="small-navbar-div">
     <div class="small-navbar-logo">
+    <a href="/">
       <img
         src="https://ampm-llc.com/wp-content/uploads/2022/11/Thank-you-for-comingvvv.png"
         alt="logo"
       />
+    </a>
     </div>
     <div class="small-navbar-icons">
       <button class="navbar-search-icons">
